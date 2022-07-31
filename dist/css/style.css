@@ -10,7 +10,6 @@ body{
 	font-size: 16px;
 	color:  #fff;
 }
-
 /*---background-----*/
 .bg-dark{
 	animation: darkcolor linear infinite 15s;
@@ -44,10 +43,6 @@ body{
 	flex-direction: column;
 	position: relative;
 }
-
-
-
-
 .title{
 	text-transform: uppercase;
 	font-size: 25px;
@@ -55,7 +50,6 @@ body{
 	margin-bottom: 25px;
 }
 /*---button light-----*/
-
 .light {
 	margin: 20px 5% 20px auto;
 	width: 80px;
@@ -79,8 +73,6 @@ body{
 	width: 40px;
 	height: 40px;
 	background: rgba(97, 60, 135, 0.5);
-	//background: rgba(0, 0, 0, 0.1);
-	//border: 3px solid #000;
 	border-radius: 14px;
 	cursor: pointer;
 	transition: 0.5s;
@@ -103,20 +95,15 @@ body{
 .main, .main__art{
 	width: 90%;
 	height: 75%;
-	//box-shadow: 0px 5px 5px 255px rgba(255, 255, 255, 0.1);
-				
-
 }
 .main{
 	border: 4px solid #fff;
-	padding: 15px;
-	
+	padding: 15px;	
 }
 /*---main art-----*/
 .main__art{
 	display: flex;
 	justify-content: center;
-
 }
 .item{
 	width: 25%;
