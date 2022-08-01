@@ -110,6 +110,7 @@ body{
 	border-left: 4px solid #000;
 	border-bottom: 4px solid #000;
 	border-top: 4px solid #000;
+	overflow: hidden;
 }
 .item:nth-last-child(2){
 	border-right: 4px solid #000;
