@@ -234,17 +234,11 @@
 	padding: 15px;
 }
 .contact__flex{
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
-	display: -webkit-flex;	
-	-webkit-box-pack: center;	
-	    -ms-flex-pack: center;	
-	justify-content: center;
-	-webkit-box-align: center;
-	    -ms-flex-align: center;
+	justify-content: space-around;
 	align-items: center;
-
+	width: 100%;
+	height: 100%;
 }
 .contact__column_b{
  	-webkit-box-flex: 0;
@@ -320,7 +314,7 @@
 .textarea {
 	position: relative;
 	width: 100%;
-	height: 100px;
+	height: 200px;
 	padding: 10px 0;
 }
 .inputBoxArea{
@@ -393,39 +387,72 @@
 .modal{
 	position: fixed;
     inset: 0;
-    width: 100%;
     height: 100%;
     overflow-y: auto;
     overflow-x: hidden;
     z-index: 10;
     background: rgba(97, 60, 135, 1);
     padding: 3rem 0;
-    display: none;
-}
-.modal__inner {
-    width: 85%;
-    margin: 0 auto;
+  	width: 100%;
     padding: 25px 15px 15px;
     background: #161026;
-    text-align: center;
+   
+	flex-direction: column;
+	justify-content:center;
+	align-items: center;
 }
+
 @media screen and (max-width: 900px){
 	.contact__flex{
 	flex-direction: column;
 	align-items: center;
 	}
-
 	.form__body{
 		display: none;
 	}
+	.modal-close{
+		position: absolute;
+		top: 7px;
+		right: 0;
+		z-index: 5;
+		width: 60px;
+		height: 60px;
+		padding: 1rem;
+		background: transparent;
+		align-items: center;
+		justify-content: center;
+	}
+	.modal-close > div {
+		position: relative;
+		width: 100%;
+		background: #fff;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		transition: all 0.4s ease;
+	  }
+	.modal-close > div::before,
+	.modal-close > div::after {
+	  content: '';
+	  position: absolute;
+	  z-index: 1;
+	  width: 100%;
+	  height: 2px;
+	  background: inherit;
+	}
+	.modal-close > div::before{
+		transform: rotate(135deg);
+	}
+	.modal-close > div::after {
+		transform: rotate(225deg);
+	}
 	.form__btn{
 	display: block;
-}
-.contact__column_b{
+	}
+	.contact__column_b{
         flex: 1 1 auto;
-}
-.contact__column_l{
+	}
+	.contact__column_l{
         flex: 1 1 auto;
-
-}
+	}
 }
